@@ -1,0 +1,6 @@
+REQUERIMIENTOS PARA INCIAR LA PAGIINA:
+Un servidor (ya sea un hosting o localhost). En database.php modificar los campos de las lineas [2;5] con los datos necesarios para el servidor
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+El usuario puede ingresar a la pagina principal sin iniciar sesión, pero no podrá acceder a funciones de usuario hasta que inicie sesión.
