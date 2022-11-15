@@ -1,0 +1,245 @@
+body{
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    
+}
+
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+li{
+    list-style: none;
+}
+
+.navbar1{
+    background-color: rgba(255, 2, 2, 0.747);
+    position: relative;
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;   
+   width: max-content;
+    margin-top: 0px;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    
+   z-index: 99;
+    padding: 0 0px;
+    background-color: none;
+    padding-bottom: 15px;
+    
+}
+.na0b{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+}
+.btn2{
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    padding-left: auto;
+    font-family: 'Josefin Sans bold', sans-serif;
+    flex-direction:column;
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: relative;
+    color:rgb(255, 255, 255);
+    transition: all 9s ease;
+    transition-timing-function:ease-out;
+}
+.btn2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color:rgb(255, 255, 255);
+    width: 0px;
+    top: 0%;
+    left: 35%;
+    bottom: 0px;
+    
+    transform: translateX(-100%);
+    transition: 0s cubic-bezier(0, -0, 0, 0) all;
+}
+.btn2:hover{
+    color:rgb(255, 255, 255);
+  
+
+}
+
+.btn2:hover::after{
+    width: 10000%;
+
+    
+}
+
+
+@media screen and (max-width:1300px ) {
+    .navbar1 {
+        
+    flex-direction: column;
+    padding-bottom: 90000px;
+    
+    }
+    .na0b{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction:column;
+        
+        }
+    .logoint{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-top : 2px solid white;
+        border-width: fit-content;
+    }
+}
+
+
+
+
+.exnav{
+    display:flex !important;
+}
+
+.btn1{
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 50px;
+    font-family: 'Josefin Sans bold', sans-serif;
+    flex-direction:column;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color:rgb(255, 255, 255);
+    transition: all 0.4s ease;
+    transition-timing-function:ease-out;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0);
+    border-radius: 100px;
+   
+}
+
+.btn1::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color:rgb(255, 255, 255);
+    transform: translateX(-50%);
+    transition: 0.3s cubic-bezier(0.3, -0.33, 0.14, 0.53) all;
+    border-radius: 100px;
+
+}
+
+
+.btn1:hover{
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    border-radius: 100px;
+    cursor:pointer;
+}
+
+.btn1:hover::after{
+    
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.2);
+ 
+}
+
+
+
+.logoKoto{
+    display: flex;
+    font-family: 'ARIAL', cursive;
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.416);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 2, 2, 0.583);
+    position:relative;
+    justify-content: start;
+    z-index: 99;
+    transition-property:all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+.logoint{
+    display: flex;
+    font-family: 'ARIAL', cursive;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+    letter-spacing: 7px;
+    position:relative;
+  justify-content: start;
+   
+    z-index: 99;
+    transition-property:all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+.logoKoto:hover{
+    cursor: pointer;
+    border-color: red;
+    color: red;
+}
+
+
+
+.btnlogoutUser{
+    position: relative;
+    display: block;
+    color:rgb(255, 255, 255);
+    background: none;
+    font: 20px "Gotham Medium", sans-serif;
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 0%;
+    margin-right: auto;
+    margin-left:auto;
+    border:0px solid red;
+    transition-property:all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+.btnlogoutUser:hover {
+    border:0px solid rgba(255, 0, 0, 0.385);
+
+}
+.bx-search{
+    
+    font-size: 30px;
+
+}
+.bx-globe{
+   
+    font-size: 30px;
+}
+.bx-log-out-circle{
+    color:rgb(255, 255, 255);
+    font-size: 45px !important;
+    transition-property:all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.651);
+
+
+}
+.bx-log-out-circle:hover{
+    color:rgb(255, 0, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+   
+}

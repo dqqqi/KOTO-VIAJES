@@ -1,0 +1,290 @@
+
+body{
+  transition-property: all;
+  transition-duration: 0.9s;
+}
+a{
+    border: 0px solid white;
+    text-decoration: none;
+}
+h2{
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  padding-top: 30px;
+  letter-spacing: 10px;
+  color:red;
+}
+h4{
+  color:red
+}
+html{
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+.mySlides{
+  display: none;
+  position: relative;
+  max-width: 100%;
+  
+
+  
+}
+.CardPadre{
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  margin: auto;
+  flex-direction:row;
+  font-family: 'Gotham Bold', sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color:rgb(34, 34, 34);
+  overflow: auto;
+  margin-top: 3%;
+}
+/* width */
+.CardPadre::-webkit-scrollbar {
+  height: 30px;
+  width: 10px;
+  transition-property: all;
+  transition-duration: 0.9s;
+ 
+}
+
+/* Track */
+
+/* Handle */
+.CardPadre::-webkit-scrollbar-thumb {
+  
+  background: rgba(253, 19, 19, 0.699);
+  transition-property: all;
+  transition-duration: 0.9s;
+  
+  width: min-content;
+  border-radius: 100px;
+ 
+}
+.mobilew{
+  display: none;
+}
+.carousels{
+  display:block;
+}
+.paises{
+  margin: auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.452);
+}
+.container{
+  font-variant: small-caps;
+  justify-content: center;
+  text-align: center;
+}
+.underline{
+  display: flex;
+  border-top: 2px solid red;
+  height: 4px;
+  max-width: 70px;
+  padding: 0;
+  padding-bottom: 40px;
+}
+.enter{
+  color:rgb(42, 163, 52);
+  font-size: 10px;
+  font-family: 'Gotham Bold',sans-serif;
+  font-variant: small-caps;
+  padding-bottom: 40px;
+  
+}
+
+.introtext{  /*NO SE ESTA UTILIZANDO*/
+  font-size: 13px;
+  padding-top: 20px;
+  color:rgb(56, 56, 56);
+}
+.content{
+  font-family: 'Arial',sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgb(rgba(0, 0, 0, 0.562));
+  font-variant: none;
+  max-width: max-content;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin: 20px 20px 20px;
+  padding: 20px 20px 20px;
+  font-size: 20px;
+  transition-property: all;
+  transition-duration: 0.9s;
+  cursor: pointer;
+  width: fit-content;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.card:hover{
+  letter-spacing: 5px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.card:hover b{
+  color: rgba(129, 15, 15, 0.856);
+  text-decoration: underline;
+  letter-spacing: 5px;
+  text-decoration:solid;
+
+}
+.select{
+  color: rgba(255, 2, 2, 0);
+  background-color: rgba(255, 2, 2, 0.747);
+}
+.select b{
+  color: white;
+  font-size: 30px;
+}
+.select:hover b{
+  color: white;
+}
+.select .paises{
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+b{
+  transition-property: all;
+  transition-duration: 0.9s;
+}
+
+
+.wrapper {
+max-width: 100%;
+margin: auto;
+}
+.btnlcar{
+display: flex;
+flex-direction: row;
+}
+footer{
+  display: flex;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+.reloj{
+  margin-top: 0px;
+  position: absolute;
+  left: calc(20%);
+  top: calc(35%);
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 200px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  z-index: 1;
+
+}
+
+.bx-up-arrow-circle{
+  font-size: 80px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color:white;
+  transition-property: all;
+  transition-duration: 0.5s;
+  margin-left: 50%;
+  
+
+}
+.bx-up-arrow-circle:hover{
+  font-size: 80px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: red;
+  color:red;
+
+}
+.bx-expand-vertical{
+  color: rgba(255, 255, 255, 0);
+}
+
+
+.solv{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  font-size: 30px;
+  
+}
+.solv li{
+  transition-property: all;
+  transition-duration: 0.4s;
+  border-bottom: 3px solid red;
+  border-radius: 5%;
+}
+.solv li:hover{
+  color: red;
+  cursor:pointer;
+}
+@media screen and (max-width:1300px ) {
+  .card{
+    margin-top: 40px!important;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 0px;
+    font-size: 30px;
+  }
+  html{
+    overflow: scroll;
+  }
+  .CardPadre{
+      justify-content: center; flex-direction: column; overflow: hidden;
+      
+      }
+      h2{
+        border-bottom: 1px solid red;
+        min-width: max-content;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0px;
+        
+      }
+      .solv{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .solv li{
+        border-bottom: 0px;
+        list-style:decimal;
+      }
+      .underline{
+        display: none;
+      }
+      .mySlides{
+        display: none !important;
+      }
+      .prev{
+        display:none;
+        
+      }
+      .mobilew{
+        display: flex;
+       max-width: max-content;
+        max-height:max-content;
+        justify-content: center;
+        align-items: center;
+      }
+      .next{
+        display:none;
+      }
+     
+}
